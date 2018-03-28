@@ -1,0 +1,76 @@
+div.payment_block_module
+{
+    margin-bottom: 5px;
+}
+
+div.payment_block_module a
+{
+    display: block;
+    border: 1px solid #d6d4d4;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 40px 10px 10px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+div.payment_block_module a:hover
+{
+    background-color: #f7ecb5 !important;
+    border-color: #008bb9;
+    color: #006699;
+    text-shadow: 2px 2px 4px #aaaaaa !important;
+    box-shadow: 2px 2px 4px #aaaaaa !important;
+}
+
+div.payment_block_module a.mpadvpayment:after {
+    color: #777777;
+    content: "";
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    height: 22px;
+    margin-top: -11px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 14px;
+}
+
+div.payment_block_module a.mpadvpayment_cash {
+    background: url("../img/cash.png");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 1px #dddddd;
+}
+
+div.payment_block_module a.mpadvpayment_bankwire
+{
+    background: url("../img/bankwire.png");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 1px #dddddd;
+}
+
+div.payment_block_module a.mpadvpayment_paypal
+{
+    background: url("../img/paypal.png");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 1px #dddddd;
+}
+
+div.payment_block_module a.mpadvpayment_card
+{
+    background: url("../img/card64.png");
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    text-shadow: 1px 1px 1px #dddddd;
+}
+

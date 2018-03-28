@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>mp_cash</name>
+	<displayName><![CDATA[mpSoft Cash Payment method with fees]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[With this module you can add fees or discounts to you order when customers choose to pay with cash.]]></description>
+	<author><![CDATA[Massimiliano Palermo]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
