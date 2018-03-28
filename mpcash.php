@@ -39,12 +39,12 @@ class MpCash extends PaymentModule
     
     public function getModulePath()
     {
-        return $this->_path;
+        return $this->local_path;
     }
     
     public function getModuleUrl()
     {
-        return $this->local_path;
+        return $this->_path;
     }
     
     public function __construct()
@@ -665,7 +665,7 @@ class MpCash extends PaymentModule
 		}
 		
         $link = new LinkCore();
-        $this->context->controller->addCSS($this->_path.'views/css/displayPayment.css');
+        $this->context->controller->addCSS($this->getModulePath().'views/css/displayPayment.css');
         
         $classFee = new ClassCashFee();
         $classFee->create();

@@ -26,18 +26,20 @@ CREATE TABLE IF NOT EXISTS `{_DB_PREFIX_}mp_advpayment_configuration` (
 ) ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `{_DB_PREFIX_}mp_advpayment_fee` ( 
-    `id_fee` INT NOT NULL AUTO_INCREMENT, 
+    `id_mp_advpayment_fee` INT NOT NULL AUTO_INCREMENT, 
     `id_order` INT NOT NULL ,  
-    `total_paid_tax_incl` DECIMAL(20,6) NOT NULL , 
-    `total_paid_tax_excl` DECIMAL(20,6) NOT NULL ,   
-    `fee_tax_incl` DECIMAL(20,6) NOT NULL , 
+    `total_order_tax_excl` DECIMAL(20,6) NOT NULL , 
+    `total_order_tax_incl` DECIMAL(20,6) NOT NULL ,   
     `fee_tax_excl` DECIMAL(20,6) NOT NULL , 
+    `fee_tax_incl` DECIMAL(20,6) NOT NULL , 
     `fee_tax_rate` DECIMAL(20,6) NOT NULL ,
     `fee_tax_amount` DECIMAL(20,6) NOT NULL ,
     `transaction_id` VARCHAR(255) NOT NULL , 
-    `payment_method` VARCHAR(30),
+    `module_name` VARCHAR(30),
+    `payment_display_name` VARCHAR(255),
     `date_add` DATE NOT NULL , 
-    `date_upd` TIMESTAMP NOT NULL , 
+    `date_upd` TIMESTAMP NOT NULL, 
+    `id_employee` INT NOT NULL DEFAULT 0,
     PRIMARY KEY (`id_fee`)
 ) ENGINE = InnoDB;";
 
